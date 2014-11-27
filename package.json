@@ -2,7 +2,7 @@
   "name": "onehundredfourtytwo",
   "title": "One Hundred Fourty-Two",
   "description": "JavaScript library for Flux like architectures",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/onehundredfourtytwo.js",
   "homepage": "https://github.com/jjoos/onehundredfourtytwo",
   "author": {
@@ -33,7 +33,7 @@
   ],
   "peerDependencies": {
     "react": ">=0.11.1",
-    "q": "~2"
+    "q": "~1"
   },
   "devDependencies": {
     "coffee-react": "^1.0.3",

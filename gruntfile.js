@@ -5,7 +5,11 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          'dist/onehundredfourtytwo.js': ['src/*.coffee']
+          'dist/onehundredfourtytwo.js': ['src/onehundredfourtytwo.coffee'],
+          'dist/actions.js': ['src/actions.coffee'],
+          'dist/dispatcher.js': ['src/dispatcher.coffee'],
+          'dist/helper.js': ['src/helper.coffee'],
+          'dist/store.js': ['src/store.coffee']
         }
       }
     },

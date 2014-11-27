@@ -1,7 +1,7 @@
-Dispatcher = require './dispatcher.coffee'
-Store = require './store.coffee'
-Actions = require './actions.coffee'
-Helper = require './helper.coffee'
+Dispatcher = require './dispatcher'
+Store = require './store'
+Actions = require './actions'
+Helper = require './helper'
 
 module.exports =
   Dispatcher: Dispatcher
