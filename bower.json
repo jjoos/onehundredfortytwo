@@ -1,11 +1,11 @@
 {
   "name": "onehundredfourtytwo",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "authors": [
     "jjoos <jan@deelstra.org>"
   ],
   "description": "JavaScript library for Flux like architectures",
-  "main": "dist/onehundredfourtytwo.js",
+  "main": "onehundredfourtytwo.js",
   "keywords": [
     "onehundredfourtytwo",
     "onehundredfourtytwojs",

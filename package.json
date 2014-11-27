@@ -2,7 +2,7 @@
   "name": "onehundredfourtytwo",
   "title": "One Hundred Fourty-Two",
   "description": "JavaScript library for Flux like architectures",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/onehundredfourtytwo.js",
   "homepage": "https://github.com/jjoos/onehundredfourtytwo",
   "author": {
