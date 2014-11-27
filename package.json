@@ -1,0 +1,57 @@
+{
+  "name": "onehundredfourtytwo",
+  "title": "One Hundred Fourty-Two",
+  "description": "JavaScript library for Flux like architectures",
+  "version": "0.0.1",
+  "main": "dist/onehundredfourtytwo.js",
+  "homepage": "https://github.com/jjoos/onehundredfourtytwo",
+  "author": {
+    "name": "Jan Deelstra",
+    "url": "https://twitter.com/jjoos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjoos/onehundredfourtytwo"
+  },
+  "keywords": [
+    "onehundredfourtytwo",
+    "onehundredfourtytwojs",
+    "flux",
+    "fluxjs",
+    "react",
+    "reactjs",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/jjoos/onehundredfourtytwo/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jjoos/onehundredfourtytwo/blob/0.0.1/MIT-LICENSE.txt"
+    }
+  ],
+  "peerDependencies": {
+    "react": "0.12.1",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "coffee-react": "^1.0.3",
+    "coffee-reactify": "^1.0.3",
+    "coffeelint": "git://github.com/jjoos/coffeelint-cjsx#with-trunk-coffeescript",
+    "coffeescript": "git://github.com/jashkenas/coffeescript",
+    "grunt": "0.4.5",
+    "grunt-browserify": "git://github.com/jmreidy/grunt-browserify",
+    "grunt-cli": "0.1.13",
+    "grunt-coffeelint": "0.0.13"
+  },
+  "scripts": {
+    "build": "npm install && grunt"
+  },
+  "maintainers": [
+    {
+      "name": "Jan Deelstra",
+      "email": "jan@deelstra.org"
+    }
+  ]
+}
