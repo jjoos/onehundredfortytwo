@@ -2,8 +2,8 @@
   "name": "onehundredfourtytwo",
   "title": "One Hundred Fourty-Two",
   "description": "JavaScript library for Flux like architectures",
-  "version": "0.0.6",
-  "main": "dist/onehundredfourtytwo.js",
+  "version": "0.0.7",
+  "main": "node/onehundredfourtytwo.js",
   "homepage": "https://github.com/jjoos/onehundredfourtytwo",
   "author": {
     "name": "Jan Deelstra",
@@ -36,10 +36,10 @@
     "q": "~1"
   },
   "devDependencies": {
-    "coffee-react": "^1.0.3",
     "coffee-reactify": "^1.0.3",
     "coffeelint": "git://github.com/jjoos/coffeelint-cjsx#with-trunk-coffeescript",
     "coffeescript": "git://github.com/jashkenas/coffeescript",
+    "grunt-browserify": "git://github.com/jmreidy/grunt-browserify",
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
     "grunt-coffeelint": "0.0.13",

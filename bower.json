@@ -5,7 +5,7 @@
     "jjoos <jan@deelstra.org>"
   ],
   "description": "JavaScript library for Flux like architectures",
-  "main": "onehundredfourtytwo.js",
+  "main": "bower/onehundredfourtytwo.js",
   "keywords": [
     "onehundredfourtytwo",
     "onehundredfourtytwojs",

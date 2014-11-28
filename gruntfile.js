@@ -5,13 +5,29 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          'dist/onehundredfourtytwo.js': ['src/onehundredfourtytwo.coffee'],
-          'dist/actions.js': ['src/actions.coffee'],
-          'dist/dispatcher.js': ['src/dispatcher.coffee'],
-          'dist/helper.js': ['src/helper.coffee'],
-          'dist/store.js': ['src/store.coffee']
+          'node/onehundredfourtytwo.js': ['src/onehundredfourtytwo.coffee'],
+          'node/actions.js': ['src/actions.coffee'],
+          'node/dispatcher.js': ['src/dispatcher.coffee'],
+          'node/helper.js': ['src/helper.coffee'],
+          'node/store.js': ['src/store.coffee']
         }
       }
+    },
+
+    browserify: {
+      all: {
+        src: 'src/onehundredfourtytwo.coffee',
+        dest: 'bower/onehundredfourtytwo.js',
+        options: {
+          exclude: ['react', 'q'],
+          browserifyOptions: {
+            extensions: ['.coffee', '.cjsx', '.js'],
+            standalone: 'onehundredfourtytwo',
+            debug: false
+          },
+          transform: ['coffee-reactify']
+        }
+      },
     },
 
     coffeelint: {
@@ -24,6 +40,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-coffeelint');
+  grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('default', ['coffeelint', 'coffee']);
+  grunt.registerTask('default', ['coffeelint', 'coffee', 'browserify']);
 };
