@@ -177,7 +177,7 @@ module.exports = {
       result = true;
       for (_key in errors) {
         error = errors[_key];
-        result = result && hasErrors(error);
+        result = result && this.valid(error);
       }
       return result;
     } else {

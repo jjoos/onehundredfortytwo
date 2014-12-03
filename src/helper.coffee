@@ -52,7 +52,7 @@ module.exports =
     else if type(errors) == 'object'
       result = true
       for _key, error of errors
-        result = result && hasErrors error
+        result = result && @valid error
       result
     else
       true
