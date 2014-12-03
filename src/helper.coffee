@@ -1,4 +1,4 @@
-React = require 'react'
+React = if window? then window.React else require 'react'
 
 Dispatcher = require './dispatcher'
 

@@ -11,6 +11,10 @@ module.exports = (function() {
 
 
 },{}],2:[function(require,module,exports){
+var Q;
+
+Q = typeof window !== "undefined" && window !== null ? window.Q : require('q');
+
 module.exports = (function() {
   _Class._storeClasses = [];
 
@@ -113,8 +117,10 @@ module.exports = (function() {
 
 
 
-},{}],3:[function(require,module,exports){
-var Dispatcher;
+},{"q":undefined}],3:[function(require,module,exports){
+var Dispatcher, React;
+
+React = typeof window !== "undefined" && window !== null ? window.React : require('react');
 
 Dispatcher = require('./dispatcher');
 
@@ -150,7 +156,7 @@ module.exports = {
 
 
 
-},{"./dispatcher":2}],4:[function(require,module,exports){
+},{"./dispatcher":2,"react":undefined}],4:[function(require,module,exports){
 var Actions, Dispatcher, Helper, Store;
 
 Dispatcher = require('./dispatcher');

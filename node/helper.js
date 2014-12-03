@@ -1,7 +1,7 @@
 (function() {
   var Dispatcher, React;
 
-  React = require('react');
+  React = typeof window !== "undefined" && window !== null ? window.React : require('react');
 
   Dispatcher = require('./dispatcher');
 

@@ -1,4 +1,4 @@
-Q = require 'q'
+Q = if window? then window.Q else require 'q'
 
 module.exports = class
   @_storeClasses: []
