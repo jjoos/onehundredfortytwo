@@ -34,36 +34,40 @@
       return this.getDispatcher().store(name).read();
     },
     valid: function(errors) {
-      var error, result, type, _key;
-      type = function(obj) {
-        var classToType;
-        if (obj === void 0 || obj === null) {
-          return String(obj);
-        }
-        classToType = {
-          '[object Boolean]': 'boolean',
-          '[object Number]': 'number',
-          '[object String]': 'string',
-          '[object Function]': 'function',
-          '[object Array]': 'array',
-          '[object Date]': 'date',
-          '[object RegExp]': 'regexp',
-          '[object Object]': 'object'
+      var validate;
+      validate = function(errors) {
+        var error, result, type, _key;
+        type = function(obj) {
+          var classToType;
+          if (obj === void 0 || obj === null) {
+            return String(obj);
+          }
+          classToType = {
+            '[object Boolean]': 'boolean',
+            '[object Number]': 'number',
+            '[object String]': 'string',
+            '[object Function]': 'function',
+            '[object Array]': 'array',
+            '[object Date]': 'date',
+            '[object RegExp]': 'regexp',
+            '[object Object]': 'object'
+          };
+          return classToType[Object.prototype.toString.call(obj)];
         };
-        return classToType[Object.prototype.toString.call(obj)];
-      };
-      if (type(errors) === 'array') {
-        return errors.length === 0;
-      } else if (type(errors) === 'object') {
-        result = true;
-        for (_key in errors) {
-          error = errors[_key];
-          result = result && this.valid(error);
+        if (type(errors) === 'array') {
+          return errors.length === 0;
+        } else if (type(errors) === 'object') {
+          result = true;
+          for (_key in errors) {
+            error = errors[_key];
+            result = result && validate(error);
+          }
+          return result;
+        } else {
+          return true;
         }
-        return result;
-      } else {
-        return true;
-      }
+      };
+      return validate(errors);
     }
   };
 

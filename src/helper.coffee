@@ -31,28 +31,31 @@ module.exports =
     @getDispatcher().store(name).read()
 
   valid: (errors) ->
-    # http://coffeescriptcookbook.com/chapters/classes_and_objects/type-function
-    type = (obj) ->
-      if obj == undefined or obj == null
-        return String obj
-      classToType =
-        '[object Boolean]': 'boolean',
-        '[object Number]': 'number',
-        '[object String]': 'string',
-        '[object Function]': 'function',
-        '[object Array]': 'array',
-        '[object Date]': 'date',
-        '[object RegExp]': 'regexp',
-        '[object Object]': 'object'
+    validate = (errors) ->
+      # http://coffeescriptcookbook.com/chapters/classes_and_objects/type-function
+      type = (obj) ->
+        if obj == undefined or obj == null
+          return String obj
+        classToType =
+          '[object Boolean]': 'boolean',
+          '[object Number]': 'number',
+          '[object String]': 'string',
+          '[object Function]': 'function',
+          '[object Array]': 'array',
+          '[object Date]': 'date',
+          '[object RegExp]': 'regexp',
+          '[object Object]': 'object'
 
-      classToType[Object.prototype.toString.call(obj)]
+        classToType[Object.prototype.toString.call(obj)]
 
-    if type(errors) == 'array'
-      errors.length == 0
-    else if type(errors) == 'object'
-      result = true
-      for _key, error of errors
-        result = result && @valid error
-      result
-    else
-      true
+      if type(errors) == 'array'
+        errors.length == 0
+      else if type(errors) == 'object'
+        result = true
+        for _key, error of errors
+          result = result && validate error
+        result
+      else
+        true
+
+    validate errors
