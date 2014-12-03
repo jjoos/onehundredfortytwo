@@ -30,8 +30,8 @@
     actions: function(name) {
       return this.getDispatcher().actions(name);
     },
-    data: function(name) {
-      return this.getDispatcher().store(name).data();
+    read: function(name) {
+      return this.getDispatcher().store(name).read();
     }
   };
 

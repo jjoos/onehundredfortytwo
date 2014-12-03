@@ -27,5 +27,5 @@ module.exports =
   actions: (name) ->
     @getDispatcher().actions(name)
 
-  data: (name) ->
-    @getDispatcher().store(name).data()
+  read: (name) ->
+    @getDispatcher().store(name).read()
