@@ -1,0 +1,7 @@
+ ☐ fix name from `onehundredfourtytwo` to `onehundredfortytwo`
+ ☐ add testing framework
+ ☐ change removeListener signature to (eventName, name)
+ ☐ investigate compatible dispatcher method signatures
+ ☐ fix bug where remove listener doesn't seem to work
+ ☐ return wrapper promises to callbacks for the other callbacks running
+ ☐ `__DEV__ = true;` Simulate development mode: https://github.com/facebook/flux/blob/master/src/__tests__/Dispatcher-test.js
