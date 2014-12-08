@@ -6,4 +6,4 @@
  ☐ return wrapper promises to callbacks for the other callbacks running
  ☐ `__DEV__ = true;` Simulate development mode: https://github.com/facebook/flux/blob/master/src/__tests__/Dispatcher-test.js
  ☐ add readme
- ☐ add travis ci integration
+ ✔ add travis ci integration @done (14-12-08 13:25)
