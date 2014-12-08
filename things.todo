@@ -1,4 +1,4 @@
- ☐ fix name from `onehundredfourtytwo` to `onehundredfortytwo`
+ ✔ fix name from `onehundredfourtytwo` to `onehundredfortytwo` @done (14-12-08 13:11)
  ☐ add testing framework
  ☐ change removeListener signature to (eventName, name)
  ☐ investigate compatible dispatcher method signatures

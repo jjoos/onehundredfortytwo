@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          'node/onehundredfourtytwo.js': ['src/onehundredfourtytwo.coffee'],
+          'node/onehundredfortytwo.js': ['src/onehundredfortytwo.coffee'],
           'node/actions.js': ['src/actions.coffee'],
           'node/dispatcher.js': ['src/dispatcher.coffee'],
           'node/helper.js': ['src/helper.coffee'],
@@ -16,13 +16,13 @@ module.exports = function(grunt) {
 
     browserify: {
       all: {
-        src: 'src/onehundredfourtytwo.coffee',
-        dest: 'bower/onehundredfourtytwo.js',
+        src: 'src/onehundredfortytwo.coffee',
+        dest: 'bower/onehundredfortytwo.js',
         options: {
           exclude: ['react', 'q'],
           browserifyOptions: {
             extensions: ['.coffee', '.cjsx', '.js'],
-            standalone: 'onehundredfourtytwo',
+            standalone: 'onehundredfortytwo',
             debug: false
           },
           transform: ['coffee-reactify']

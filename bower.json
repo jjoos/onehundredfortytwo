@@ -1,14 +1,14 @@
 {
-  "name": "onehundredfourtytwo",
+  "name": "onehundredfortytwo",
   "version": "0.0.12",
   "authors": [
     "jjoos <jan@deelstra.org>"
   ],
   "description": "JavaScript library for Flux like architectures",
-  "main": "bower/onehundredfourtytwo.js",
+  "main": "bower/onehundredfortytwo.js",
   "keywords": [
-    "onehundredfourtytwo",
-    "onehundredfourtytwojs",
+    "onehundredfortytwo",
+    "onehundredfortytwojs",
     "flux",
     "fluxjs",
     "react",
@@ -16,7 +16,7 @@
     "framework"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/jjoos/onehundredfourtytwo",
+  "homepage": "https://github.com/jjoos/onehundredfortytwo",
   "ignore": [
     "**/.*",
     "node_modules",

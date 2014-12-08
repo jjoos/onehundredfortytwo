@@ -1,7 +1,7 @@
 (function() {
   var Q;
 
-  Q = typeof window !== "undefined" && window !== null ? window.Q : require('q');
+  Q = (typeof window !== "undefined" && window !== null ? window.Q : void 0) != null ? window.Q : require('q');
 
   module.exports = (function() {
     _Class._storeClasses = [];
